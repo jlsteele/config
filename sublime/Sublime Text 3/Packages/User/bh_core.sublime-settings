@@ -1,0 +1,11 @@
+{
+    "scope_brackets": [
+    {
+        "name": "single_quote",
+        "enabled": false
+    },
+    {
+            "name": "double_quote",
+            "enabled": false
+    }]
+}

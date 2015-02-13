@@ -1,0 +1,21 @@
+{
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"BracketHighlighter",
+		"CloseOtherWindows",
+		"Dracula Color Scheme",
+		"EasyMotion",
+		"Emmet",
+		"Focus File on Sidebar",
+		"GitGutter",
+		"JSON Reindent",
+		"Monokai Gray",
+		"Package Control",
+		"SideBarEnhancements",
+		"Theme - Carmesim",
+		"Theme - Nexus"
+	]
+}

@@ -1,0 +1,5 @@
+[
+    { "keys": ["ctrl+shift+r"], "command": "reindent" , "args": { "single_line": false } },
+    { "keys": ["alt+shift+l"], "command": "reveal_in_side_bar"},
+    { "keys": ["ctrl+shift+s"], "command": "save_all"}
+]
