@@ -1,0 +1,60 @@
+[user]
+	name = Joe Steele
+	email = Joseph.Steele@leedsth.nhs.uk
+[core]
+	autocrlf = True
+	excludesfile = F:\\gitignore_global.txt
+	whitespace = cr-at-eol,ignore-space-at-eol
+[alias]
+	adda = add -A .
+	ama = commit --amend -a
+	amash = commit --amend -a --no-edit
+	b = branch
+	ch = checkout
+	chc = "!f() { git checkout CP-$1; }; f"
+	changes = show --pretty="format:" --name-status
+	cb = checkout -b
+	cbc = !sh -c 'git checkout -b CP-$1' --
+	cam = commit -a -m
+	camb = !sh -c 'git commit -a -m \"$(git rev-parse --abbrev-ref HEAD) - ${1}\"' --
+	cg = config --global
+	cge = config --global --edit
+	m = !sh -c 'git merge $1 --ff' --
+	mc = !sh -c 'git merge CP-$1 --ff' --
+	qg = !sh -c 'git --no-pager log --graph --pretty=format:\"%C(auto)%h %Cgreen%ar%Creset %s %Cblue%an%Creset\" --max-count=${1-12}' --
+	qg2 = !sh -c 'git --no-pager log --pretty=oneline --abbrev-commit --graph --max-count=${1-12}' --
+	sbd = !sh -c 'git show-branch develop $(git rev-parse --abbrev-ref HEAD)' --
+	sbc = !sh -c 'git show-branch CP-$1 $(git rev-parse --abbrev-ref HEAD)' --
+	db = branch -D
+	dbc = !sh -c 'git branch -D CP-$1' --
+	sb = show-branch HEAD
+	po = !git push --set-upstream origin \"$(git rev-parse --abbrev-ref HEAD)\"
+	s = status
+	st = status
+	rhh = reset --hard HEAD
+	rhhh = reset --hard HEAD^
+	rc = rebase --continue
+	f = fetch
+	dhh = diff -w HEAD^..HEAD
+	bm = branch -m
+	cm = commit -m
+	r = rebase
+	mt = mergetool
+	rod = rebase origin/develop
+[merge]
+	tool = p4merge
+[mergetool "p4merge"]
+	path = C:/Program Files/Perforce/p4merge.exe
+	trustexitcode = true
+	cmd = \"C:/Program Files/Perforce/p4merge.exe\" \"$BASE\" \"$LOCAL\" \"$REMOTE\" \"$MERGED\"
+[rerere]
+	enabled = true
+[push]
+	default = simple
+[mergetool]
+	keepBackup = false
+[diff]
+	guitool = p4merge
+[difftool "p4merge"]
+	path = C:/Program Files/Perforce/p4merge.exe
+	cmd = \"C:/Program Files/Perforce/p4merge.exe\" \"$LOCAL\" \"$REMOTE\"
