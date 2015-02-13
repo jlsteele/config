@@ -19,6 +19,8 @@
 	camb = !sh -c 'git commit -a -m \"$(git rev-parse --abbrev-ref HEAD) - ${1}\"' --
 	cg = config --global
 	cge = config --global --edit
+	l = !sh -c 'git --no-pager log --date-order --pretty=format:\"%C(yellow)%h%Cblue%d%Creset %s %C(dim white)%Cred%an, %ar%Creset\" --max-count=${1-12}' --;
+	lg = !sh -c 'git --no-pager log --date-order --pretty=format:\"%C(yellow)%h%Cblue%d%Creset %s %C(dim white)%Cred%an, %ar%Creset\" --graph --max-count=${1-12}' --;
 	m = !sh -c 'git merge $1 --ff' --
 	mc = !sh -c 'git merge CP-$1 --ff' --
 	qg = !sh -c 'git --no-pager log --graph --pretty=format:\"%C(auto)%h %Cgreen%ar%Creset %s %Cblue%an%Creset\" --max-count=${1-12}' --
