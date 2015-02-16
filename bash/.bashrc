@@ -31,7 +31,6 @@ alias adda='git adda'
 alias clean='git clean -f'
 alias push='git push'
 alias pull='git pull'
-alias fix-endings=sed -i 's/\r//g' $1
 alias locals='git for-each-ref  --format='\''%(refname:short) %(upstream)'\''  refs/heads | awk '\''$2 !~/^refs\/remotes/'\'
 __git_complete ch _git_checkout
 __git_complete g _git
