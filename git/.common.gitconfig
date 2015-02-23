@@ -1,0 +1,32 @@
+[alias]
+    adda = add -A .
+    ama = commit --amend -a
+    amash = commit --amend -a --no-edit
+    b = branch
+    ch = checkout
+    changes = show --pretty="format:" --name-status
+    cb = checkout -b
+    cam = commit -a -m
+    camb = !sh -c 'git commit -a -m \"$(git rev-parse --abbrev-ref HEAD) - ${1}\"' --
+    cg = config --global
+    cge = config --global --edit
+    l = !sh -c 'git --no-pager log --date-order --pretty=format:\"%C(yellow)%h%Cblue%d%Creset %s %C(dim white)%Cred%an, %ar%Creset\" --max-count=${1-12}' --;
+    lg = !sh -c 'git --no-pager log --date-order --pretty=format:\"%C(yellow)%h%Cblue%d%Creset %s %C(dim white)%Cred%an, %ar%Creset\" --graph --max-count=${1-12}' --;
+    m = !sh -c 'git merge $1 --ff' --
+    qg = !sh -c 'git --no-pager log --graph --pretty=format:\"%C(auto)%h %Cgreen%ar%Creset %s %Cblue%an%Creset\" --max-count=${1-12}' --
+    qg2 = !sh -c 'git --no-pager log --pretty=oneline --abbrev-commit --graph --max-count=${1-12}' --
+    sbd = !sh -c 'git show-branch develop $(git rev-parse --abbrev-ref HEAD)' --
+    db = branch -D
+    sb = show-branch HEAD
+    po = !git push --set-upstream origin \"$(git rev-parse --abbrev-ref HEAD)\"
+    s = status
+    st = status
+    rhh = reset --hard HEAD
+    rhhh = reset --hard HEAD^
+    rc = rebase --continue
+    f = fetch
+    dhh = diff -w HEAD^..HEAD
+    bm = branch -m
+    cm = commit -m
+    r = rebase
+    mt = mergetool

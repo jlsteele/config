@@ -4,7 +4,7 @@
 		<colors>
 			<color id="0" r="0" g="0" b="0"/>
 			<color id="1" r="113" g="86" b="190"/>
-			<color id="2" r="0" g="150" b="0"/>
+			<color id="2" r="0" g="128" b="0"/>
 			<color id="3" r="0" g="150" b="150"/>
 			<color id="4" r="170" g="25" b="25"/>
 			<color id="5" r="128" g="0" b="128"/>
@@ -14,7 +14,7 @@
 			<color id="9" r="0" g="100" b="255"/>
 			<color id="10" r="0" g="255" b="0"/>
 			<color id="11" r="0" g="255" b="255"/>
-			<color id="12" r="255" g="50" b="50"/>
+			<color id="12" r="255" g="83" b="83"/>
 			<color id="13" r="255" g="0" b="255"/>
 			<color id="14" r="255" g="255" b="0"/>
 			<color id="15" r="255" g="255" b="255"/>
@@ -156,7 +156,15 @@
 				</image>
 			</background>
 		</tab>
+		<tab title="Babun" use_default_icon="0">
+			<console shell="cmd /c C:\Users\steeljos\.babun\cygwin\bin\zsh.exe -l" init_dir="C:\dev\lth-epr" run_as_user="0" user="" net_only="0" run_as_admin="1"/>
+			<cursor style="0" r="255" g="255" b="255"/>
+			<background type="0" r="0" g="0" b="0">
+				<image file="" relative="0" extend="0" position="0">
+					<tint opacity="0" r="0" g="0" b="0"/>
+				</image>
+			</background>
+		</tab>
 	</tabs>
 	<external_commands>
-
 </external_commands></settings>

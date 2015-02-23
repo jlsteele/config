@@ -25,12 +25,13 @@ alias f='git fetch'
 alias g=git
 alias s='git status'
 alias ch='git checkout'
-alias subl="/c/program\ files/Sublime\ Text\ 2/sublime_text.exe"
+alias subl="/c/program\ files\ \(x86\)/Sublime\ Text\ 3/sublime_text.exe"
 alias qg='git qg'
 alias adda='git adda'
 alias clean='git clean -f'
 alias push='git push'
 alias pull='git pull'
 alias locals='git for-each-ref  --format='\''%(refname:short) %(upstream)'\''  refs/heads | awk '\''$2 !~/^refs\/remotes/'\'
+alias cge='vim ~/.gitconfig'
 __git_complete ch _git_checkout
 __git_complete g _git
