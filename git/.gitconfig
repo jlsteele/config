@@ -2,7 +2,6 @@
 	name = Joe Steele
 	email = Joseph.Steele@leedsth.nhs.uk
 [core]
-	autocrlf = True
 	excludesfile = F:\\gitignore_global.txt
 	whitespace = cr-at-eol,ignore-space-at-eol
 [include]
@@ -20,12 +19,6 @@
 	path = C:/Program Files/Perforce/p4merge.exe
 	trustexitcode = true
 	cmd = \"C:/Program Files/Perforce/p4merge.exe\" \"$BASE\" \"$LOCAL\" \"$REMOTE\" \"$MERGED\"
-[rerere]
-	enabled = true
-[push]
-	default = simple
-[mergetool]
-	keepBackup = false
 [diff]
 	guitool = p4merge
 [difftool "p4merge"]

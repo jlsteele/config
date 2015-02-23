@@ -1,3 +1,5 @@
+[user]
+    name = Joe Steele
 [alias]
     adda = add -A .
     ama = commit --amend -a
@@ -30,3 +32,11 @@
     cm = commit -m
     r = rebase
     mt = mergetool
+[rerere]
+    enabled = true
+[push]
+    default = simple
+[mergetool]
+    keepBackup = false
+[core]
+    autocrlf = True
